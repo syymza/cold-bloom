@@ -23,13 +23,13 @@ function labels() {
   document.querySelector('#supply-value').value = text.supply;
   document.querySelector('#deposition-value').value = text.deposition;
   supply.setAttribute('aria-valuetext', `${text.supply} vapor supply for the next crystal`);
-  deposition.setAttribute('aria-valuetext', `${text.deposition} deposition for the next crystal`);
+  deposition.setAttribute('aria-valuetext', `${text.deposition} ice buildup for the next crystal`);
   for (const input of [supply, deposition]) input.style.setProperty('--fill', `${(+input.value - +input.min) / (+input.max - +input.min) * 100}%`);
 }
 function updateText() {
   if (failed) { status.textContent = 'Growth was interrupted. Reload to continue.'; return; }
   status.textContent = document.hidden ? 'Resting in the background' : active?.done ? 'A new seed will follow' : 'A crystal is taking shape';
-  const text = queued ? 'Ready for the next crystal. Earlier shapes stay as they are.' : `New crystal: ${active.words.supply.toLowerCase()} vapour, ${active.words.deposition.toLowerCase()} deposition. Changes wait for the next.`;
+  const text = queued ? 'Ready for the next crystal. Earlier shapes stay as they are.' : `New crystal: ${active.words.supply.toLowerCase()} vapour, ${active.words.deposition.toLowerCase()} ice buildup. Changes wait for the next.`;
   if (guidance.textContent !== text) guidance.textContent = text;
 }
 function release(item) {
