@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#142b29"><meta name="description" content="A continuous composition of independent hexagonal crystals. Two simple conditions shape each new seed."><title>Cold Bloom — a study in growth</title><link rel="stylesheet" href="style.css?v=20261027-release-5"></head>
+<body>
+<main>
+<header><a class="wordmark" href="./" aria-label="Cold Bloom home">Cold Bloom<span>A STUDY IN GROWTH</span></a><span class="edition">FIELD STUDY / 001</span></header>
+<section class="chamber" aria-label="Crystal growth chamber">
+  <div class="intro"><h1>A little time.<br>A different kind of bloom.</h1><p>One crystal, then another.<br>A quiet, continuous bloom.</p></div>
+  <canvas id="crystal" role="img" aria-label="A composition of independent sixfold crystals growing in turn"></canvas>
+  <div class="canvas-footer"><span id="status" role="status">Taking shape</span><span class="chamber-note">HEXAGONAL DIFFUSION STUDY</span></div>
+</section>
+<section class="instruments" aria-label="Growth conditions">
+  <p id="guidance" class="growth-guide" aria-live="polite">Each new crystal takes these settings. Earlier shapes stay as they are.</p>
+  <div class="condition"><label for="supply">Vapour supply <output id="supply-value" for="supply">Steady</output></label><input id="supply" type="range" min="0.32" max="0.72" step="0.01" value="0.45" aria-describedby="supply-help guidance"><p id="supply-help"><span>Less vapor</span><span>More vapor</span></p></div>
+  <div class="condition"><label for="deposition">Deposition <output id="deposition-value" for="deposition">Steady</output></label><input id="deposition" type="range" min="0" max="100" step="1" value="38" aria-describedby="deposition-help guidance"><p id="deposition-help"><span>Less added</span><span>More added</span></p></div>
+
+</section>
+<footer><p>A new seed follows. Each crystal keeps its own history.</p><details><summary>About Cold Bloom</summary><div class="model-note"><p>Inspired by <a href="https://webbox.lafayette.edu/~reiterc/mvp/sfn/index.html" target="_blank" rel="noopener">Cliff Reiter’s snow crystal model</a>, Cold Bloom explores how simple growth rules create intricate shapes.</p><p>Change the controls to shape the next crystal. Older crystals fade to make room for new ones.</p><p><a href="MODEL.md">Model notes</a></p></div></details></footer>
+</main><script type="module" src="app.js?v=20261027-release-5"></script>
+</body></html>

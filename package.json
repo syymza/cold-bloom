@@ -1,0 +1,1 @@
+{"name":"cold-bloom","private":true,"type":"module","scripts":{"test":"node --test tests/model.test.mjs tests/reference.test.mjs tests/build.test.mjs","build":"node scripts/build.mjs","serve":"python3 -m http.server 4178 --bind 127.0.0.1"}}

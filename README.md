@@ -6,7 +6,7 @@ One seed grows, then another begins in a considered position. Up to five crystal
 
 **[Open Cold Bloom](https://syymza.github.io/cold-bloom/)**
 
-The two controls set **vapor supply** and **edge growth for the next crystal**. They are dimensionless model conditions, not calibrated temperature or weather. Crystals are independently simulated and visually arranged, not physically coupled. [Model, attribution and numerical limitations](MODEL.md).
+The two controls set **vapour supply** and **deposition for the next crystal**. They are dimensionless model conditions, not calibrated temperature or weather. Crystals are independently simulated and visually arranged, not physically coupled. [Model, attribution and numerical limitations](MODEL.md).
 
 ## Run locally
 
